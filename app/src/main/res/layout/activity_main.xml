@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:shadowColor="#000"
+            android:shadowDx="0"
+            android:shadowDy="30"
+            android:shadowRadius="50">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/ic_insert_chart_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Statistic"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="60sp" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="Collected signal"
+                            android:textColor="@android:color/black" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".5">
+
+                    <include layout="@layout/activity_info" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+
+                <com.alespero.expandablecardview.ExpandableCardView
+                    android:id="@+id/location_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:animationDuration="300"
+                    app:expandOnClick="true"
+                    app:icon="@drawable/ic_location_on_black_24dp"
+                    app:inner_view="@layout/location_info"
+                    app:startExpanded="false"
+                    app:title="Location Informations" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+
+                <com.alespero.expandablecardview.ExpandableCardView
+                    android:id="@+id/device_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:animationDuration="300"
+                    app:expandOnClick="true"
+                    app:icon="@drawable/ic_phone_android_black_24dp"
+                    app:inner_view="@layout/device_info"
+                    app:startExpanded="false"
+                    app:title="Device informations" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+
+                <com.alespero.expandablecardview.ExpandableCardView
+                    android:id="@+id/lte_mesurement"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:animationDuration="300"
+                    app:expandOnClick="true"
+                    app:icon="@drawable/ic_network_cell_black_24dp"
+                    app:inner_view="@layout/lte_measurement"
+                    app:startExpanded="false"
+                    app:title="LTE Measurements" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+
+                <com.alespero.expandablecardview.ExpandableCardView
+                    android:id="@+id/cell_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:animationDuration="300"
+                    app:expandOnClick="true"
+                    app:icon="@drawable/ic_speaker_phone_black_24dp"
+                    app:inner_view="@layout/cell_info"
+                    app:startExpanded="false"
+                    app:title="Cell Informations" />
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GET CSV FILE"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
