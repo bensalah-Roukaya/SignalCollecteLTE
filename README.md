@@ -1,8 +1,7 @@
 # SignalCollecteLTE
 
 # Application Android pour la collecte de données de réseau mobile 4G.
-
-# Cette application permet de collecter en continu les données du réseau mobile lTE(4G).On est capable de déterminer:
+ Cette application permet de collecter en continu les données du réseau mobile lTE(4G).On est capable de déterminer:
 
         * l'activité de l'utilisateur (Still,In vehicle,Walking…)
         * Générer de la position automatiquement (Longitude,Latitude,l'addresse complete).
